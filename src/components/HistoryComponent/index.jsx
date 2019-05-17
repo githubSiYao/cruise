@@ -13,7 +13,7 @@ export default class HistoryComponent extends React.Component {
     return (
       <li className="history__list-item" key={index}>
         <span className="item-dot"></span>
-        <p>{item}</p>
+        <p title={item}>{item}</p>
       </li>
     )
   }

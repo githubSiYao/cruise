@@ -31,7 +31,7 @@ export default class ContainerComponent extends React.Component {
 
   render() {
     return (
-      <div className="page">
+      <div className="container">
         <HeaderComponent></HeaderComponent>
         <div className="wrapper">
           <div className="left-side">

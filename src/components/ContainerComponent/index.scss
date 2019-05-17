@@ -1,6 +1,6 @@
 @import '../../scss/variables';
 
-.page {
+.container {
   .wrapper {
     display: flex;
     width: 100%;
@@ -14,11 +14,6 @@
   .left-side {
     position: relative;
     background-color: $menuBackground;
-
-    .history {
-      position: absolute;
-      bottom: 50px;
-    }
   }
 
   .right-side {
