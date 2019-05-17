@@ -5,6 +5,10 @@
   padding: 10px;
   box-sizing: border-box;
   background-color: $menuBackground;
+  h1 {
+    font-size: 24px;
+    color: #cccccc;
+  }
 
   &__list {
     color: #999999;
@@ -25,15 +29,14 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
-
-        &::before {
-          display: inline-block;
-          width: 4px;
-          height: 4px;
-          border-radius: 50%;
-          margin-right: 14px;
-          background-color: #999999;
-        }
+      }
+      .item-dot {
+        display: inline-block;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        margin-right: 14px;
+        background-color: #999999;
       }
     }
   }

@@ -19,11 +19,13 @@ export default class ContainerComponent extends React.Component {
     this.history = [
       'bjstdmngbdr01/Acceptance_test',
       'bjstdmngbdr02/Acceptance_test',
-      'bjstdmngbdr03/Acceptance_test',
+      'bjstdmngbdr03/Acceptance_testzsdfsdfsdjfkjsdkfj',
       'bjstdmngbdr04/Acceptance_test',
       'bjstdmngbdr05/Acceptance_test',
       'bjstdmngbdr06/Acceptance_test',
-      'bjstdmngbdr07/Acceptance_test'
+      'bjstdmngbdr07/Acceptance_test',
+      'bjstdmngbdr08/Acceptance_test',
+      'bjstdmngbdr09/Acceptance_test',
     ]
   }
 

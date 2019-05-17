@@ -8,13 +8,13 @@
   background-color: #ffffff;
   box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.1);
 
-  // .header-wrapper {
-  //   position: relative;
-  //   max-width: 1200px;
-  //   margin: 0 auto;
-  //   display: flex;
-  //   justify-content: flex-end;
-  // }
+  &__wrapper {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+  }
 
   &__logo {
     position: absolute;
@@ -29,18 +29,18 @@
   }
 
 
-&__user-menu-area {
-  position: relative;
-  padding: 12px;
-  margin-right: 10px;
-  display: inline-flex;
-  align-items: center;
+  &__user-menu-area {
+    position: relative;
+    padding: 12px;
+    margin-right: 10px;
+    display: inline-flex;
+    align-items: center;
 
-  &:hover .header__user-menu-list,
-  .header__user-menu-list:hover {
-    display: block;
+    &:hover .header__user-menu-list,
+    .header__user-menu-list:hover {
+      display: block;
+    }
   }
-}
 
   &__user-avatar {
     &-img {
@@ -77,7 +77,10 @@
       align-items: center;
       min-width: 128px;
       cursor: pointer;
-
+      span.iconfont {
+        width: 20px;
+        font-size: 14px;
+      }
       &:hover {
         background-color: #efefef;
       }

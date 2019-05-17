@@ -38,10 +38,12 @@ export default class HeaderComponent extends React.Component {
   render() {
     return (
       <header className="header">
-        <Link to="/" className="header__logo">
-          <img src={logo} alt="Cruise"/>
-        </Link>
-        {this._renderUserMenuList()}
+        <div className="header__wrapper">
+          <Link to="/" className="header__logo">
+            <img src={logo} alt="Cruise" />
+          </Link>
+          {this._renderUserMenuList()}
+        </div>
       </header>
     )
   }

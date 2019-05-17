@@ -1,11 +1,11 @@
 @import '../../scss/variables.scss';
 
 .menu {
-  width: 250px;
+  width: 230px;
   padding-top: 20px;
   background-color: $menuBackground;
 
-  &__menu{
+  &__item{
     &:hover a, .active {
       color: $cyanBlue;
       background-color: $menuHover;

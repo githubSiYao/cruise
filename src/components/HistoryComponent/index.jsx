@@ -1,4 +1,5 @@
 import React from 'react'
+import './index.scss'
 
 export default class HistoryComponent extends React.Component {
   constructor(props) {
@@ -11,7 +12,7 @@ export default class HistoryComponent extends React.Component {
   _renderHistoryItems(item, index) {
     return (
       <li className="history__list-item" key={index}>
-        {console.log(item)}
+        <span className="item-dot"></span>
         <p>{item}</p>
       </li>
     )
