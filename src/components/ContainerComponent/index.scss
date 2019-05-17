@@ -1,0 +1,29 @@
+@import '../../scss/variables';
+
+.cruise-page {
+    .wrapper {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 64px;
+        max-width: 1200px;
+        min-width: 1000px;
+        height: calc(100vh - 64px);
+    }
+
+    .left-side {
+        position: relative;
+        background-color: $menuBackground;
+
+        .cruise-history {
+            position: absolute;
+            bottom: 50px;
+        }
+    }
+
+    .right-side {
+        flex: 1 auto;
+        padding: 15px 15px 25px;
+        overflow-y: auto;
+    }
+}

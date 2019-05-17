@@ -1,0 +1,28 @@
+@import '../../scss/variables.scss';
+
+.menu {
+  width: 250px;
+  padding-top: 20px;
+  background-color: $menuBackground;
+
+  &__menu{
+    &:hover a, .active {
+      color: $cyanBlue;
+      background-color: $menuHover;
+    }
+
+    a {
+      text-decoration: none;
+      display: flex;
+      color: #fff;
+      font-size: 14px;
+      font-weight: normal;
+      padding: 13px 20px 12px;
+      align-items: center;
+    }
+
+    .iconfont {
+      margin-right: 15px;
+    }
+  }
+}
