@@ -1,8 +1,8 @@
 import React from 'react'
-import HeaderComponent from '../HeaderComponent'
-import MenuComponent from '../MenuComponent'
-import HistoryComponent from '../HistoryComponent'
-import FooterComponent from '../FooterComponent'
+import HeaderComponent from './modules/HeaderComponent'
+import MenuComponent from './modules/MenuComponent'
+import HistoryComponent from './modules/HistoryComponent'
+import FooterComponent from './modules/FooterComponent'
 import './index.scss'
 
 export default class ContainerComponent extends React.PureComponent {
