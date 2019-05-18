@@ -1,0 +1,100 @@
+@import '../../../../scss/variables.scss';
+
+.agent__items {
+  .agent-item {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+  }
+
+  .agent-icon {
+    min-width: 80px;
+    height: 80px;
+    background-color: #D4D4D4;
+    margin-right: 10px;
+  }
+
+  .agent-info, .agent-operation {
+    display: flex;
+    align-items: center;
+  }
+
+  .agent-detail {
+    flex: 1 auto;
+    margin-left: 25px;
+    .agent-info {
+      margin-bottom: 20px;
+      >div {
+        margin-right: 15px;
+      }
+      .name {
+        color: $cyanBlue;
+      }
+      .name, .location {
+        max-width: 250px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      .iconfont {
+        font-size: 14px;
+        color: #ACACAC;
+      }
+
+      .info-with-icon {
+        display: flex;
+        align-items: center;
+        >span{
+          margin-left: 8px;
+        }
+      }
+    
+      .info-label {
+        color: #FFFFFF;
+        padding: 2px 8px;
+        margin-right: 40px;
+      }
+
+      .agent-detail {
+        flex: 1 auto;
+        margin-left: 25px;
+      }
+    }
+  }
+  .agent-operation {
+    display: flex;
+    justify-content: space-between;
+
+    .button-group {
+        flex: 1 auto;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+.add-button {
+  padding: 3px 4px;
+  .iconfont {
+    font-size: 18px;
+  }
+}
+
+.resource-button {
+    color: $darkColor;
+    background-color: #EFEFEF;
+    
+    &:hover {
+      background-color: #EFEFEF;
+    }
+
+    .iconfont {
+      margin-left: 8px;
+      font-size: 16px;
+    }
+  }
+}
