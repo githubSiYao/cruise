@@ -15,23 +15,39 @@ export default class AgentComponent extends React.Component {
     this.tabList = ['All', 'Physical', 'Virtual']
 
     this.state = {
-      visible: false
+      data: [], // agents list
+      visible: false, // add resource modal
+      addAgendId: -1, // add resouuce id
     }
 
     this._triggerModalOpen = this._triggerModalOpen.bind(this)
     this._triggerModalSubmit = this._triggerModalSubmit.bind(this)
   }
 
+  componentDidMount() {
+    this.setState({
+      data: this.props.data
+    })
+  }
+
   // Trigger add resource modal open
   _triggerModalOpen(id) {
-    this.setState({ visible: true })
+    this.setState({ visible: true, addAgendId: id })
   }
 
   // add resource modal submit
   _triggerModalSubmit(value) {
-    // TODO HTTP Request 
-    console.log(value)
-    this.setState({visible: false})
+    // TODO HTTP Request Here,Mock API
+    const resources = value.split(',').map(item => item.trim()).filter(item => item !== '');
+
+    const list = this.state.data.map(item => {
+      if (item.id === this.state.addAgendId) {
+        // TODO Check Input is repeat
+        item.resources = item.resources.concat(resources)
+      }
+      return item
+    })
+    this.setState({ visible: false, data: list })
   }
 
   render() {
@@ -54,7 +70,7 @@ export default class AgentComponent extends React.Component {
 
         {/* Agent Item */}
         <div className="agent__items">
-          {this.props.data.map(item => (
+          {this.state.data.map(item => (
             <ListItem agent={item} key={item.id} onOpenModal={id => this._triggerModalOpen(id)} />
           ))}
         </div>

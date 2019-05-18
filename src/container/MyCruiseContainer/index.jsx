@@ -6,7 +6,7 @@ export default class Dashboard extends React.PureComponent {
   render() {
     return (
       <FrameComponent>
-        Dashboard...
+        My Cruise...
       </FrameComponent>
     )
   }

@@ -2,6 +2,8 @@ import React from 'react'
 import { HashRouter, Redirect, Route, Switch } from 'react-router-dom'
 import DashboardContainer from './container/DashboardContainer'
 import AgentContainer from './container/AgentContainer'
+import MyCruiseContainer from './container/MyCruiseContainer'
+import HelpConatainer from './container/HelpContainer'
 
 class App extends React.Component {
   render() {
@@ -10,8 +12,8 @@ class App extends React.Component {
         <Switch>
           <Route component={AgentContainer} path="/agent"></Route>
           <Route component={DashboardContainer} path="/index"></Route>
-          {/* <Route component={Help} path="/help"></Route> */}
-          {/* <Route component={MyCruise} path="/myCruise"></Route> */}
+          <Route component={HelpConatainer} path="/help"></Route>
+          <Route component={MyCruiseContainer} path="/myCruise"></Route>
           <Redirect from="/" to="/index"></Redirect>
         </Switch>
       </HashRouter >
