@@ -1,0 +1,62 @@
+@import '../../../../scss/variables.scss';
+
+.yellow {
+  background-color: $yellow !important;
+}
+
+.green {
+  background-color: $green !important;
+}
+
+.card {
+  position: relative;
+  width: 270px;
+  height: 118px;
+  padding: 12px;
+  color: #FFFFFF;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+
+  h1 {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+
+  p {
+    text-align: right;
+    font-size: 48px;
+    padding: 10px;
+  }
+
+  .iconfont {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    line-height: 1;
+    font-size: 144px;
+    color: rgba($color: #FFFFFF, $alpha: 0.2);
+    transform: translate(-50%, -50%);
+  }
+}
+
+.overview {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  .overview-item {
+    color: $normalColor;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+    span:last-child {
+        margin-top: 30px;
+        font-size: 20px;
+        color: #000000;
+    }
+  }
+}

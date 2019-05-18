@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import './index.scss'
 import logo from '../../logo.svg'
 
-export default class HeaderComponent extends React.Component {
+export default class HeaderComponent extends React.PureComponent {
   constructor(props) {
     super(props)
 

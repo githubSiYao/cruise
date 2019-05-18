@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import './index.scss'
 
-export default class MenuComponent extends React.Component {
+export default class MenuComponent extends React.PureComponent {
 
   constructor(props) {
     super(props)
@@ -32,3 +32,5 @@ export default class MenuComponent extends React.Component {
     )
   }
 }
+
+// TODO React.PropTypes

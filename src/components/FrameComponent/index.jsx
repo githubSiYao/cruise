@@ -5,7 +5,7 @@ import HistoryComponent from '../HistoryComponent'
 import FooterComponent from '../FooterComponent'
 import './index.scss'
 
-export default class ContainerComponent extends React.Component {
+export default class ContainerComponent extends React.PureComponent {
   constructor(props) {
     super(props)
 
@@ -33,7 +33,7 @@ export default class ContainerComponent extends React.Component {
     return (
       <div className="container">
         <HeaderComponent></HeaderComponent>
-        <div className="wrapper">
+        <section className="content">
           <div className="left-side">
             <MenuComponent data={this.menu}></MenuComponent>
             <HistoryComponent data={this.history}></HistoryComponent>
@@ -41,7 +41,7 @@ export default class ContainerComponent extends React.Component {
           <div className="right-side">
             {this.props.children}
           </div>
-        </div>
+        </section>
         <FooterComponent></FooterComponent>
       </div>
     );

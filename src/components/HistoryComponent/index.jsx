@@ -1,7 +1,7 @@
 import React from 'react'
 import './index.scss'
 
-export default class HistoryComponent extends React.Component {
+export default class HistoryComponent extends React.PureComponent {
   constructor(props) {
     super(props)
 
@@ -28,4 +28,6 @@ export default class HistoryComponent extends React.Component {
       </div>
     )
   }
-} 
+}
+
+// TODO React.PropTypes

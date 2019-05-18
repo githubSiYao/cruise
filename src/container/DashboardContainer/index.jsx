@@ -1,13 +1,13 @@
 import React from 'react';
-import ContainerComponet from '../../components/ContainerComponent'
+import FrameComponent from '../../components/FrameComponent'
 import './index.scss';
 
 export default class Dashboard extends React.PureComponent {
   render() {
     return (
-      <ContainerComponet>
+      <FrameComponent>
         Dashboard
-      </ContainerComponet>
+      </FrameComponent>
     )
   }
 }
