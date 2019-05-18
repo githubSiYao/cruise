@@ -1,14 +1,14 @@
 import React from 'react';
-import FrameComponent from '../../components/FrameComponent'
+import LayoutComponent from '../../components/LayoutComponent'
 import MyCruiseComponent from '../../components/MyCruiseComponent'
 import './index.scss';
 
 export default class Dashboard extends React.PureComponent {
   render() {
     return (
-      <FrameComponent>
+      <LayoutComponent>
         <MyCruiseComponent />
-      </FrameComponent>
+      </LayoutComponent>
     )
   }
 }

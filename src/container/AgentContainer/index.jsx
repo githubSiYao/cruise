@@ -1,5 +1,5 @@
 import React from 'react'
-import FrameComponent from '../../components/FrameComponent'
+import LayoutComponent from '../../components/LayoutComponent'
 import AgentComponent from '../../components/AgentComponet'
 import './index.scss'
 
@@ -98,9 +98,9 @@ export default class AgentContainer extends React.Component {
       }
     ]
     return (
-      <FrameComponent>
+      <LayoutComponent>
         <AgentComponent data={mockData}/>
-      </FrameComponent>
+      </LayoutComponent>
     )
   }
 }

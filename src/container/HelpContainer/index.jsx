@@ -1,14 +1,14 @@
 import React from 'react';
-import FrameComponent from '../../components/FrameComponent'
+import LayoutComponent from '../../components/LayoutComponent'
 import HelpComponent from '../../components/HelpComponent'
 import './index.scss';
 
 export default class HelpContainer extends React.PureComponent {
   render() {
     return (
-      <FrameComponent>
+      <LayoutComponent>
         <HelpComponent />
-      </FrameComponent>
+      </LayoutComponent>
     )
   }
 }
