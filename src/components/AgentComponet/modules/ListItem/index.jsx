@@ -48,10 +48,9 @@ export default class ListItem extends React.Component {
               </button>
               {
                 resources.map((item, index) => (
-                  <button className="resource-button" key={index}
-                    onClick={() => this._removeResource(id, index)}>
+                  <button className="resource-button" key={index}>
                     <span>{item}</span>
-                    <span className="iconfont icon-trash"></span>
+                    <span className="iconfont icon-trash" onClick={() => this._removeResource(id, index)}></span>
                   </button>
                 ))
               }
