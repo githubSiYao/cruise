@@ -1,11 +1,33 @@
 # ThoughtWorks Cruise F2E HomeWork
 
+## 命令  
+#### 0. 安装
+```bash
+    npm install or yarn install  
+```  
+
+#### 1. 运行开发环境  
+```bash
+    npm start or yarn start  
+```
+
+#### 2. 运行单元测试  
+> 第一次如果报错，为暂未生成快照，再执行一次即可。  
+```bash
+    npm test or yarn test  
+```
+
+#### 3. 输出生产环境  
+```bash  
+    npm run build --report  or yarn run build --report  
+```
+
 ### 完成进度说明  
-1. Use 1200px Grid Layout.        ●  
-2. Function1 Delete Resource.     ●  
-3. Function2 Add New Resource.    ●  
-4. Apply Responsive Design.       ○     支持到Tablet（添加资源弹出层未做）.不支持Phone   
-5. Javascript Unit Test.          ○     仅做了部分 Unit Test以及快照测试编写,功能组件单元测试未做  
+- [x] Use 1200px Grid Layout.        
+- [x] Function1 Delete Resource.     
+- [x] Function2 Add New Resource.    
+- [x] Apply Responsive Design.  支持到Tablet（添加资源弹出层未做）.不支持Phone   
+- [x] Javascript Unit Test.   仅做了部分 Unit Test以及快照测试编写,功能组件单元测试未做  
 
 ### 项目结构目录说明  
 ├── public  
