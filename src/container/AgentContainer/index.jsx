@@ -83,7 +83,7 @@ export default class AgentContainer extends React.Component {
       },
       {
         "name": "bjstdmngbdr01.thoughtworks.com",
-        "os": "centos",
+        "os": "cent_os",
         "status": "idle",
         "type": "virtual",
         "ip": "192.168.1.103",

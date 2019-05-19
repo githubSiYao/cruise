@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HeaderComponent /> HeaderComponent Snapshot 1`] = `
+<header
+  className="header"
+>
+  <div
+    className="header__wrapper"
+  >
+    <a
+      className="header__logo"
+      href="/"
+      onClick={[Function]}
+    >
+      <img
+        alt="Cruise"
+        src="logo.svg"
+      />
+    </a>
+    <div
+      className="header__user-menu-area"
+    >
+      <div
+        className="header__user-avatar"
+      >
+        <span
+          className="header__user-avatar-img"
+        />
+        <span
+          className="iconfont icon-angle-down"
+        />
+      </div>
+      <ul
+        className="header__user-menu-list"
+      >
+        <li
+          className="header__user-menu-list-item"
+        >
+          <span
+            className="iconfont icon-id-card"
+          />
+          <span
+            className="header__user-menu-list-item-label"
+          >
+            Profile
+          </span>
+        </li>
+        <li
+          className="header__user-menu-list-item"
+        >
+          <span
+            className="iconfont icon-sign-in"
+          />
+          <span
+            className="header__user-menu-list-item-label"
+          >
+            Sign Out
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+`;

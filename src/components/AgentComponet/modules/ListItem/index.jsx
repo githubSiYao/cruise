@@ -14,7 +14,7 @@ export default class ListItem extends React.Component {
         <div className="agent-icon">
           <img
             width="100%" height="100%" alt={os}
-            src={`${process.env.PUBLIC_URL}/assets/os_icons/${os}.png`}
+            src={`${process.env.PUBLIC_URL}/assets/os icons/${os}.png`}
           />
         </div>
         <div className="agent-detail">

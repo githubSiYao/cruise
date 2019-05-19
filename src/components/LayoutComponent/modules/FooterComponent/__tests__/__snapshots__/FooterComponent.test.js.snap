@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FooterComponent /> FooterComponent Snapshot 1`] = `
+<footer
+  className="footer"
+>
+  © Copyright 2019 ThoughtWorks
+</footer>
+`;

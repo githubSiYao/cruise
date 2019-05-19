@@ -4,6 +4,7 @@ import DashboardContainer from './container/DashboardContainer'
 import AgentContainer from './container/AgentContainer'
 import MyCruiseContainer from './container/MyCruiseContainer'
 import HelpConatainer from './container/HelpContainer'
+import './scss/reset.scss'
 
 class App extends React.Component {
   render() {
