@@ -81,14 +81,14 @@ export default class AgentComponent extends React.Component {
         </div>
 
         {/* Agent Item */}
-        <div className="agent__items">
+        {this.state.data && this.state.data.length > 0 ? (<div className="agent__items">
           {this.state.data.map(item => (
             <ListItem agent={item} key={item.id}
               onOpenModal={id => this._triggerModalOpen(id)}
               onRemoveResource={(id, index) => this._triggerResourceDelete(id, index)}
             />
           ))}
-        </div>
+        </div>) : null}
 
         <Modal visible={this.state.visible}
           onClose={() => this.setState({ visible: false })}
