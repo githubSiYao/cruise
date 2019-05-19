@@ -3,8 +3,14 @@ import './index.scss'
 
 export default class ListItem extends React.Component {
 
+  // handle open resource modal
   _handleOpenModal = (id) => {
     this.props.onOpenModal(id)
+  }
+
+  // handle remove resource
+  _removeResource = (id, index) => {
+    this.props.onRemoveResource(id, index)
   }
 
   render() {
@@ -43,7 +49,7 @@ export default class ListItem extends React.Component {
               {
                 resources.map((item, index) => (
                   <button className="resource-button" key={index}
-                    onClick={() => this.removeResource(id, index)}>
+                    onClick={() => this._removeResource(id, index)}>
                     <span>{item}</span>
                     <span className="iconfont icon-trash"></span>
                   </button>

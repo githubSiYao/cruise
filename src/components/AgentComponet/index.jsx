@@ -22,6 +22,7 @@ export default class AgentComponent extends React.Component {
 
     this._triggerModalOpen = this._triggerModalOpen.bind(this)
     this._triggerModalSubmit = this._triggerModalSubmit.bind(this)
+    this._triggerResourceDelete = this._triggerResourceDelete.bind(this)
   }
 
   componentDidMount() {
@@ -50,6 +51,17 @@ export default class AgentComponent extends React.Component {
     this.setState({ visible: false, data: list })
   }
 
+  // resouce remove
+  _triggerResourceDelete(id, index) {
+    const list = this.state.data.map(item => {
+      if (item.id === id) {
+        item.resource = item.resources.splice(index, 1).concat([])
+      }
+      return item;
+    })
+    this.setState({ data: list })
+  }
+
   render() {
     return (
       <React.Fragment>
@@ -71,7 +83,10 @@ export default class AgentComponent extends React.Component {
         {/* Agent Item */}
         <div className="agent__items">
           {this.state.data.map(item => (
-            <ListItem agent={item} key={item.id} onOpenModal={id => this._triggerModalOpen(id)} />
+            <ListItem agent={item} key={item.id}
+              onOpenModal={id => this._triggerModalOpen(id)}
+              onRemoveResource={(id, index) => this._triggerResourceDelete(id, index)}
+            />
           ))}
         </div>
 
