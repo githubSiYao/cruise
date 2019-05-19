@@ -9,6 +9,9 @@ export default class ContainerComponent extends React.PureComponent {
   constructor(props) {
     super(props)
 
+    this.state = {
+      hideMenu: true,
+    }
     this.menu = [
       { to: '/index', icon: 'icon-dashboard', name: 'DASHBOARD' },
       { to: '/agent', icon: 'icon-sitemap', name: 'AGENT' },
@@ -27,12 +30,25 @@ export default class ContainerComponent extends React.PureComponent {
       'bjstdmngbdr08/Acceptance_test',
       'bjstdmngbdr09/Acceptance_test',
     ]
+
+    this._triggerShowMenu = this._triggerShowMenu.bind(this)
+    this._handleHiddenMenu = this._handleHiddenMenu.bind(this)
+  }
+
+  // header click show menu show
+  _triggerShowMenu() {
+    this.setState({ hideMenu: false })
+  }
+
+  // close menu
+  _handleHiddenMenu() {
+    this.setState({ hideMenu: true })
   }
 
   render() {
     return (
       <div className="container">
-        <HeaderComponent></HeaderComponent>
+        <HeaderComponent onShowClick={this._triggerShowMenu}></HeaderComponent>
         <section className="content">
           <div className="left-side">
             <MenuComponent data={this.menu}></MenuComponent>
@@ -43,6 +59,17 @@ export default class ContainerComponent extends React.PureComponent {
           </div>
         </section>
         <FooterComponent></FooterComponent>
+
+
+        <div className="hidden-sider-menu" style={{ display: this.state.hideMenu ? 'none' : 'block' }}>
+          <div className="close-block">
+            <span className="iconfont icon-close"
+              onClick={this._handleHiddenMenu}
+            ></span>
+          </div>
+          <MenuComponent data={this.menu}></MenuComponent>
+          <HistoryComponent data={this.history}></HistoryComponent>
+        </div>
       </div>
     );
   }

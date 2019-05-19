@@ -13,7 +13,7 @@
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
   }
 
   &__logo {
@@ -27,7 +27,6 @@
     height: 40px;
     width: auto;
   }
-
 
   &__user-menu-area {
     position: relative;
@@ -88,6 +87,18 @@
       &-label {
         padding-left: 10px;
       }
+    }
+  }
+
+  &__nav-menu {
+    @media screen and (max-width : 1024px){
+      visibility: visible;
+      cursor: pointer;
+    }
+    visibility: hidden;
+    padding: 22px 15px;
+    .iconfont {
+      color: #435466;
     }
   }
 }

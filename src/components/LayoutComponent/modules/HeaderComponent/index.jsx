@@ -13,6 +13,7 @@ export default class HeaderComponent extends React.PureComponent {
       { icon: 'icon-sign-in', label: 'Sign Out' }
     ]
     this._renderUserMenuList = this._renderUserMenuList.bind(this)
+    this._handleShowMenu = this._handleShowMenu.bind(this)
   }
 
   // render user menu list
@@ -35,10 +36,20 @@ export default class HeaderComponent extends React.PureComponent {
     )
   }
 
+  // Tablet Response Design
+  _handleShowMenu() {
+    this.props.onShowClick()
+  }
+
   render() {
     return (
       <header className="header">
         <div className="header__wrapper">
+          <div className="header__nav-menu">
+            <span className="iconfont icon-navicon"
+              onClick={this._handleShowMenu}
+            ></span>
+          </div>
           <Link to="/" className="header__logo">
             <img src={logo} alt="Cruise" />
           </Link>
