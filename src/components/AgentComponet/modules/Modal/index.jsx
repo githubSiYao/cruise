@@ -23,8 +23,8 @@ export default class Modal extends React.Component {
       return;
     }
     const box = event.target.getBoundingClientRect();
-    const top = box.y + box.height + 14;
-    const left = box.x - box.width / 2 - 14 / 2;
+    const top = box.top + box.height + 14;
+    const left = box.left - box.width / 2 - 14 / 2;
     this.setState({
       value: '',
       top,

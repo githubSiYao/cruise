@@ -43,10 +43,4 @@
     .add-resource-button {
         margin-left: 0;
     }
-
-    &.arrow-down::before {
-        top: unset;
-        bottom: -8px;
-        transform: rotate(32deg) skew(4deg, 28deg);
-    }
 }
